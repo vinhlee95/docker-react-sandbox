@@ -1,0 +1,9 @@
+sudo: required
+services:
+	- docker
+
+before_install:
+	- docker build -t vinhlee95/docker-react-sandbox -f Dockerfile.dev .
+
+scripts:
+	- docker run vinhlee95/docker-react-sandbox npm run test -- --coverage
