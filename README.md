@@ -1,12 +1,12 @@
 # Simple CRA app + Docker
 A simple react app with Docker
 
-## Running development server
+## Run development server
 ```bash
   docker-compose up --build
 ```
 
-## Running production nginx server
+## Run production nginx server
 ```bash
   docker build .
 ```
